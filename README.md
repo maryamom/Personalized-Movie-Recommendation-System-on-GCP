@@ -11,7 +11,7 @@ Ce projet implémente un système de recommandation de films personnalisé qui :
 - **Entraîne des modèles** de recommandation (Collaborative Filtering avec SVD, Content-Based, et Hybride)
 - **Permet l'ajout** de nouveaux utilisateurs avec leurs ratings
 - **Re-entraîne automatiquement** le modèle après l'ajout de nouveaux ratings
-- **Fournit une interface web** intuitive avec Streamlit
+- **Fournit une interface web** intuitive avec Flask
 - **S'adapte aux nouveaux utilisateurs** (gestion du cold start)
 
 ### Objectifs du Projet
@@ -67,7 +67,7 @@ Ce projet implémente un système de recommandation de films personnalisé qui :
 - **Google Cloud BigQuery** : Stockage et requêtes des données
 - **Google Cloud Run** : Déploiement du service
 - **Docker** : Containerisation
-- **Streamlit** : Interface utilisateur web
+- **flask** : Interface utilisateur web
 
 ### Data Processing
 - **pandas-gbq** : Intégration pandas-BigQuery
@@ -78,7 +78,7 @@ Ce projet implémente un système de recommandation de films personnalisé qui :
 ```
 .
 ├── recommender.py              # Module principal de recommandation
-├── streamlit_app.py            # Interface Streamlit
+├── app2.py                     # Interface 
 ├── Dockerfile                  # Configuration Docker
 ├── docker-compose.yml          # Configuration Docker Compose
 ├── .dockerignore               # Fichiers à exclure de Docker
@@ -103,7 +103,7 @@ Module principal contenant :
 - Gestion des nouveaux utilisateurs
 - Re-entraînement du modèle
 
-#### `streamlit_app.py`
+#### `app2.py`
 Interface utilisateur avec 3 sections :
 1. **Explorer les Films** : Recherche et affichage
 2. **Ajouter des Ratings** : Gestion des nouveaux utilisateurs
